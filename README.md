@@ -26,13 +26,6 @@ GitHub Pages (Static Hosting)
 ### Step 1: Create a Web App
 
 - Created a simple `index.html` with a heading message.👇
-- <!DOCTYPE html>
-<html>
-<head><title>CI/CD Pipeline Test</title></head>
-<body>
-  <h1>Hello from GitHub Actions CI/CD!</h1>
-</body>
-</html>
 - Placed all files in the root directory of the repository.
 
 ### Step 2: Push Code to GitHub
@@ -72,7 +65,7 @@ git push -u origin main (follow the above steps)
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./  # root directory containing HTML files
-Errors Faced and Debugging
+## Errors Faced and Debugging
 Initial Error: Workflow failed to run due to YAML syntax errors in the workflow file.
 
 How I fixed: Carefully corrected indentation and syntax in .yml file.
@@ -93,7 +86,7 @@ Error: GitHub Pages source settings misconfigured.
 
 How I fixed: Set GitHub Pages source to deploy from gh-pages branch via GitHub repository settings.
 
-Final Solution
+## Final Solution
 Used this GitHub Actions workflow which works reliably for static sites:
 name: Deploy to GitHub Pages
 
@@ -120,4 +113,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
-This workflow triggered automatically on each push to main and deployed the site successfully.
+## This workflow triggered automatically on each push to main and deployed the site successfully.
