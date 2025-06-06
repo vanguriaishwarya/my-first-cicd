@@ -33,11 +33,11 @@ GitHub Pages (Static Hosting)
 - Initialized Git repository locally.
 - Added and committed files.
 - Pushed to GitHub remote repository on the `main` branch.
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/your-username/your-repo-name.git
-git push -u origin main (follow the above steps)
+- git init
+- git add .
+- git commit -m "Initial commit"
+- git remote add origin https://github.com/your-username/your-repo-name.git
+- git push -u origin main (follow the above steps)
 
 
 ### Step 3: Set Up GitHub Actions Workflow
