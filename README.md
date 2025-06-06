@@ -25,7 +25,7 @@ GitHub Pages (Static Hosting)
 
 ### Step 1: Create a Web App
 
-- Created a simple `index.html` with a heading message.👇
+- Created a simple `index.html` with a heading message.
 - Placed all files in the root directory of the repository.
 
 ### Step 2: Push Code to GitHub
@@ -33,6 +33,7 @@ GitHub Pages (Static Hosting)
 - Initialized Git repository locally.
 - Added and committed files.
 - Pushed to GitHub remote repository on the `main` branch.
+- (follow the below steps to push the code to gitHub)👇
 - git init
 - git add .
 - git commit -m "Initial commit"
